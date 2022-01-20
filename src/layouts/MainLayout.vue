@@ -71,7 +71,7 @@
                 <q-icon color="grey-8" class="icons-class" name="fas fa-lock" />
               </q-item-section>
             </q-item>
-           <span class=" text-weight-medium text-center text-changes q-ma-sm text-grey-8">TOTAL
+           <span class=" text-weight-medium text-center text-changes q-ma-sm text-grey-8">TOTALS
             </span>
               <span class=" text-weight-medium text-center text-changes q-ma-sm text-grey-8 ">PROFITS
             </span>
