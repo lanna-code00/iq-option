@@ -344,9 +344,13 @@
 
     <q-footer class="text-white main-footer">
       <q-toolbar>
-        <q-toolbar-title>
-          
+        <q-toolbar-title style="margin-top: -20px">
+             <span style="font-size: 13px" class="q-mt-sm">Total portfolio</span>
         </q-toolbar-title>
+             <span style="font-size: 13px; margin-top: -20px" class="q-mt-sm text-grey">
+               Show position <q-icon name="fas fa-caret-down" class="check-class text-grey" color="white" />
+
+             </span>
       </q-toolbar>
     </q-footer>
 
@@ -387,6 +391,7 @@ export default {
    border-bottom: 1px solid $grey-8
 .main-footer
    background-color: #1B192F
+   height: 35px
 .icon-div
    border: 1px solid $grey-8  
 .listfont-div1 
