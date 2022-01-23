@@ -12,12 +12,63 @@
           <span class="q-ml-sm q-py-sm text-body1">iq option</span> 
             
                 
-                <div class="listfont-div">
+                <div class="listfont-div1">
                   <q-btn 
                  flat 
                  round 
                  color="grey-6" 
                  icon="fas fa-th-list"
+                 size="md"
+                 class="list_button"
+                />
+                </div>
+
+              <div class="listfont-div2">
+                <q-icon name="fas fa-times" class="nav-icons" side top/>
+                <q-btn 
+                 flat 
+                 round 
+                 color="grey-6" 
+                 icon="fas fa-th-list"
+                 size="md"
+                 class="list_button q-ml-sm"
+                >
+                <q-item clickable v-ripple class="q-pa-m">
+                  <q-item-section>
+                    <q-item-label class="nav-text text-weight-bolder">EUR/JPY (0</q-item-label>
+                    <q-item-label class="nav-text text-weight-regular">Caption</q-item-label>
+                  </q-item-section>
+                  </q-item>
+
+                </q-btn>
+              </div>
+
+              <div class="listfont-div3">
+                <q-icon name="fas fa-times" class="nav-icons" side top/>
+                <q-btn 
+                 flat 
+                 round 
+                 color="grey-6" 
+                 icon="fas fa-th-list"
+                 size="md"
+                 class="list_button q-ml-sm"
+                >
+                <q-item clickable v-ripple class="q-pa-m">
+                  <q-item-section>
+                    <q-item-label class="nav-text text-weight-bolder">EUR/USD (0</q-item-label>
+                    <q-item-label class="nav-text text-weight-regular">Caption</q-item-label>
+                  </q-item-section>
+                  </q-item>
+
+                </q-btn>
+              </div>
+
+                <div class="listfont-div1">
+                  <q-btn 
+                 flat 
+                 round 
+                 color="grey-6" 
+                 icon="fas fa-plus"
                  size="md"
                  class="list_button"
                 />
@@ -57,7 +108,36 @@
                 /> -->
         </div>
         </q-toolbar-title>
-  
+              <div class="listfont-camera">
+                    <q-btn 
+                  flat 
+                  round 
+                  color="grey-6" 
+                  icon="fas fa-camera"
+                  size="md"
+                  class="list_button"
+                  />
+                </div>
+
+                 <div class="">
+                    <q-btn 
+                  flat 
+                  round 
+                  color="grey-6" 
+                  icon="fas fa-caret-down"
+                  size="sm"
+                  class="list_button"
+                  />
+                </div>
+
+                 <div class="">
+                    <span class="text-body1 q-ml-md text-weight-bolder text-amber-10">$10,000.00</span>
+                </div>
+
+                  <div class="q-ml-sm">
+                  <q-btn color="positive" size="md" icon="fas fa-dollar-sign" label="Deposit" />
+                </div>
+
       </q-toolbar>
     </q-header>
 
@@ -65,19 +145,20 @@
       <div class="row ">
       <div class="col-3">
             <q-list bordered class="qlistSidebar">
-            <div >
-            <q-item>
+            <div style="cursor:pointer">
+           <q-item>
               <q-item-section avatar>
                 <q-icon color="grey-8" class="icons-class" name="fas fa-lock" />
               </q-item-section>
-            </q-item>
-           <span class=" text-weight-medium text-center text-changes q-ma-sm text-grey-8">TOTALS
-            </span>
-              <span class=" text-weight-medium text-center text-changes q-ma-sm text-grey-8 ">PROFITS
-            </span>
-            </div>  
 
-            <div>
+            </q-item>
+              <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 ">TOTAL
+            </span>
+              <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 ">PROFIT
+            </span>
+            </div> 
+
+            <div style="cursor:pointer">
            <q-item>
               <q-item-section avatar>
                 <q-icon color="grey-8" class="icons-class" name="fas fa-clock" />
@@ -90,7 +171,7 @@
             </span>
             </div>
 
-            <div>
+            <div style="cursor:pointer">
               <q-item>
               <q-item-section avatar>
                 <q-icon color="grey-8" class="icons-class" name="fas fa-comments" />
@@ -101,7 +182,7 @@
                 <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">SUPPORT </span>
             </div>
 
-            <div>
+            <div style="cursor:pointer">
              <q-item>
               <q-item-section avatar>
                 <q-icon color="grey-8" class="icons-class" name="fas fa-award" />
@@ -112,7 +193,7 @@
                 <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">BOARD </span>
             </div>
 
-            <div>
+            <div style="cursor:pointer">
              <q-item>
               <q-item-section avatar>
                 <q-icon color="grey-8" class="icons-class" name="fas fa-chart-line" />
@@ -123,7 +204,7 @@
                 <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">ANALYSIS </span>
        </div>
 
-            <div>
+            <div style="cursor:pointer">
              <q-item>
               <q-item-section avatar>
                 <q-icon color="grey-8" class="icons-class" name="fas fa-play-circle" />
@@ -134,7 +215,7 @@
                 <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">TUTORIALS </span>
             </div>
 
-            <div>
+            <div style="cursor:pointer">
             <q-item>
               <q-item-section avatar>
                 <q-icon color="grey-8" class="icons-class" name="fas fa-ellipsis-h" />
@@ -149,7 +230,7 @@
       <div class="col-9 qListNotifs">
         
         <q-list >
-         <q-item class="notifs">
+         <q-item class="notifs" clickable>
         <q-item-section avatar class="q-mt-lg q-mb-md">
           <q-circular-progress
         show-value
@@ -166,13 +247,13 @@
         </q-item-section>
 
         <q-item-section side top>
-          <q-icon name="fas fa-times" color="grey-8" />
+          <q-icon name="fas fa-times" color="white" size="xs"/>
         </q-item-section>
       </q-item>
       
       <q-separator color="grey-8"></q-separator>
 
-         <q-item>
+         <q-item clickable>
         <q-item-section avatar class="">
           <q-icon name="fas fa-check-circle" class="check-class" color="positive" />
         </q-item-section>
@@ -197,7 +278,7 @@
 
       <q-separator color="grey-8"></q-separator>
 
-      <q-item>
+      <q-item clickable>
         <q-item-section avatar class="">
           <q-badge rounded size="md" color="grey-8" label="3" />
         </q-item-section>
@@ -209,7 +290,7 @@
 
       <q-separator color="grey-8"></q-separator>
 
-      <q-item>
+      <q-item clickable>
         <q-item-section avatar class="">
           <q-icon name="fas fa-check-circle" class="check-class" color="positive" />
         </q-item-section>
@@ -301,19 +382,30 @@ export default {
    background-color: #1B192F
 .icon-div
    border: 1px solid $grey-8  
-.listfont-div 
+.listfont-div1 
    border-top: 1px solid
    border-top-left: 1px solid
    border-top-right: 1px solid
    border-bottom: 1px solid 
    border: 1px solid $grey-8
    height: 38px
+.listfont-div2 
+   background-color: #37344E 
+   border-bottom: 1px solid $amber-10
+   height: 38px 
+.listfont-div3 
+   background-color: #37344E 
+   border-bottom: 1px solid $amber-10
+   height: 38px
+.listfont-camera
+   height: 38px 
+   background-color: #37344E 
 .list_button 
    margin-top: -3px   
 .top-divs
-   border-bottom: 1px solid $amber-10
    background-color: #37344E 
    height: 38px
+   border-radius: 50px
 .text-changes
    font-size: 10px
 .icons-class
@@ -336,5 +428,12 @@ export default {
 .check-class
    font-size: 20px 
 .stretch-button
-   width: 100%        
+   width: 100% 
+.nav-text
+   font-size: 70%  
+.nav-icons
+   font-size: 50%
+   margin-bottom: 25px
+   padding: 4px  
+   font-color: $grey-2        
 </style>
