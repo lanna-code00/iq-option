@@ -143,93 +143,84 @@
 
     <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered class="sidebar-drawer bg-blue-grey-10">
       <div class="row ">
-      <div class="col-3">
+      <div class="col-3 ">
             <q-list bordered class="qlistSidebar">
             <div style="cursor:pointer">
            <q-item>
               <q-item-section avatar>
-                <q-icon color="grey-8" class="icons-class" name="fas fa-lock" />
+                <q-icon color="grey-8" class="icons-class q-ml-sm" name="fas fa-lock" />
+                <span class="text-grey-8">TOTAL</span>
+                <span class="text-grey-8">PROFIT</span>
               </q-item-section>
-
             </q-item>
-              <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 ">TOTAL
-            </span>
-              <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 ">PROFIT
-            </span>
+          
             </div> 
 
             <div style="cursor:pointer">
            <q-item>
               <q-item-section avatar>
-                <q-icon color="grey-8" class="icons-class" name="fas fa-clock" />
+                <q-icon color="grey-8" class="icons-class q-ml-sm" name="fas fa-clock" />
+                <span class="text-grey-8">TRADING</span>
+                <span class="text-grey-8">HISTORY</span>
               </q-item-section>
-
             </q-item>
-              <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 ">TRADING
-            </span>
-              <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 ">HISTORY
-            </span>
+    
             </div>
 
             <div style="cursor:pointer">
               <q-item>
               <q-item-section avatar>
-                <q-icon color="grey-8" class="icons-class" name="fas fa-comments" />
+                <q-icon color="grey-8" class="icons-class q-ml-sm" name="fas fa-comments" />
+                <span class="text-grey-8">CHATS</span>
+                <span class="text-grey-8">&SUPPORT</span>
               </q-item-section>
             </q-item>
-             <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">CHATS $  
-            </span>
-                <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">SUPPORT </span>
             </div>
 
             <div style="cursor:pointer">
              <q-item>
               <q-item-section avatar>
-                <q-icon color="grey-8" class="icons-class" name="fas fa-award" />
+                <q-icon color="grey-8" class="icons-class q-ml-sm" name="fas fa-award" />
+                 <span class="text-grey-8">LEADER</span>
+                <span class="text-grey-8">BOARD</span>
               </q-item-section>
             </q-item>
-              <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">LEADER  
-            </span>
-                <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">BOARD </span>
             </div>
 
             <div style="cursor:pointer">
              <q-item>
               <q-item-section avatar>
-                <q-icon color="grey-8" class="icons-class" name="fas fa-chart-line" />
+                <q-icon color="grey-8" class="icons-class q-ml-sm" name="fas fa-chart-line" />
+                  <span class="text-grey-8">MARKET</span>
+                <span class="text-grey-8">ANALYSIS</span>
               </q-item-section>
             </q-item>
-              <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">MARKET  
-            </span>
-                <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">ANALYSIS </span>
        </div>
 
             <div style="cursor:pointer">
              <q-item>
               <q-item-section avatar>
-                <q-icon color="grey-8" class="icons-class" name="fas fa-play-circle" />
+                <q-icon color="grey-8" class="icons-class q-ml-sm" name="fas fa-play-circle" />
+                <span class="text-grey-8">VIDEO</span>
+                <span class="text-grey-8">TUTORIALS</span>
               </q-item-section>
             </q-item>
-            <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">VIDEO  
-            </span>
-                <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">TUTORIALS </span>
             </div>
 
             <div style="cursor:pointer">
             <q-item>
               <q-item-section avatar>
-                <q-icon color="grey-8" class="icons-class" name="fas fa-ellipsis-h" />
+                <q-icon color="grey-8" class="icons-class q-ml-sm" name="fas fa-ellipsis-h" />
+                <span class="text-grey-8">MORE</span>
               </q-item-section>
             </q-item>
-            <span class="q-ml-md q-mt-sm text-weight-medium text-center text-changes q-ma-sm text-grey-8 justify-center">MORE  
-            </span>
             </div>
 
             </q-list>
       </div>
       <div class="col-9 qListNotifs">
         
-        <q-list >
+        <q-list>
          <q-item class="notifs" clickable>
         <q-item-section avatar class="q-mt-lg q-mb-md">
           <q-circular-progress
@@ -308,19 +299,35 @@
         </q-item-section>
 
         <q-item-section class="">
-          <q-item-label class="text-white">Top up your account</q-item-label>
+          <q-item-label class="text-white">Top up your account
+            
+          </q-item-label>
           <q-item-label class="text-grey-5">
           </q-item-label>
         </q-item-section>
       </q-item>
         <div class="row q-mb-md">
           <div class="col-12 q-px-md">
-            <q-btn unelevated color="positive" class="stretch-button" label="deposit" />
+            <q-btn unelevated color="positive" class="stretch-button" size="sm" label="deposit" />
 
           </div>
         </div>
 
       <q-separator color="grey-8"></q-separator>
+        <div class="q-mt-sm q-pa-sm">
+            <span style="font-size: 12px" class="text-white float-end">Might be useful
+              <span class="q-ml-xl" style="color: grey; cursor:pointer">Show more</span>  
+            </span> 
+        </div>
+
+       <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" class="q-ml-lg" style="width: 180px">
+           <div class="absolute-top text-center" style="background: none">
+            How to trade in iq option
+          </div>
+          <div class="absolute-full text-subtitle2 flex flex-center">
+              <q-icon name="fas fa-play" class="check-class q-mt-sm" color="white" />
+          </div>
+        </q-img>
 
         </q-list>
       </div>
